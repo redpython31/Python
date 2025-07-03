@@ -330,15 +330,15 @@ word = "hello world"
 
 #Nested Dictionary
 
-student = {
-    "name" : "Faisal",
-    "class" : 12,
-    "score" : {
-        "chem" : 97,
-        "phy" : 98,
-        "maths" : 96 
-    }
-}
+# student = {
+#     "name" : "Faisal",
+#     "class" : 12,
+#     "score" : {
+#         "chem" : 97,
+#         "phy" : 98,
+#         "maths" : 96 
+#     }
+# }
 
 # print(student["score"]["chem"])
 # print(student.keys())   #which type of key are there but not print nested keys
@@ -364,9 +364,88 @@ student = {
 
 #Sets in Python
 
-set = {1,2,3,4, "Hello", "World","World", 2,2,3}
+# sets = {1,2,3,4, "Hello", "World","World", 2,2,3}
 # set ignore duplicate integers or string
 
-print(set)
-print(type(set))
-print(len(set))
+# emptySet = set() #empty set syntax
+
+# print(sets)
+# print(type(sets))
+# print(len(sets))
+
+
+# sets.add(9)
+# sets.add("Faisal") #This is string
+# sets.add((1,3,6)) #This is tuple
+# #set.add([1,3,5]) #we cannot add any list 
+
+# print(sets)
+
+# sets.remove(9)
+# sets.remove("World")
+# print(sets)
+
+# sets.clear()
+# print(len(sets))
+
+# popFun = {"hello", "faisal", "How", "are", "You"}
+
+# print(popFun.pop())
+# print(popFun.pop()) 
+# print(popFun.pop())
+
+# otherSet = {1, 2, 4 , 5 , 8 , "Hello", "Faisal", "World"}
+
+# print(sets.union(otherSet))
+# print(sets.intersection(otherSet))
+
+#Question #9
+
+#Store following word meanings in a python dictionary: 
+
+#table: "a piece of funrnityre", "list of facts & figures"
+#cat: "a small animal"
+
+# object = {
+#     "table" : ["a piece of furniture", "list of facts & figures"],
+#     "cat" : "a small animal"
+#     }
+
+# print(object)
+
+#you are given a list of subjects for students. Assume one classroom is required for 1 subject. How many classrooms are needed by all students. 
+
+#python, java, C++, python, javascript, java, python, java, C++, C
+
+# language = {"python", "java", "C++", "python", "javascript", "java", "python","java", "C++", "C"}
+
+# print(len(language))
+
+#Question #10
+
+#Write a program to enter marks of 3 subjects from the user and store them in a dictionary.Start with an empty dictionary & add one by one. Use subject name as key & nakes as value.
+
+# stdMarks = {}
+
+# sub = (input("Enter subject: "))
+# marks = int(input("Enter marks: "))
+# stdMarks.update({sub : marks})
+
+# sub = (input("Enter subject: "))
+# marks = int(input("Enter marks: "))
+# stdMarks.update({sub : marks})
+
+# sub = (input("Enter subject: "))
+# marks = int(input("Enter marks: "))
+# stdMarks.update({sub : marks})
+
+# print(stdMarks)
+
+#Figure out a way to store 9 & 9.0 as separate values in the set. (you can take help of built-in data types)
+
+numSet = {9, "9.0"} #Possible solution
+
+numSet1 = {("float", 9.0),("int", 9)}
+
+print(numSet)
+print(numSet1)
