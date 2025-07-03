@@ -85,7 +85,7 @@ print("Price" ,price)
 
 # Slicing pos + or neg -
 
-word = "hello world"
+#word = "hello world"
 
 # print(word[2:7])
 # print(word[:8]) #auto takes first index 0 
@@ -443,9 +443,9 @@ word = "hello world"
 
 #Figure out a way to store 9 & 9.0 as separate values in the set. (you can take help of built-in data types)
 
-numSet = {9, "9.0"} #Possible solution
+#numSet = {9, "9.0"} #Possible solution
 
-numSet1 = {("float", 9.0),("int", 9)}
+#numSet1 = {("float", 9.0),("int", 9)}
 
-print(numSet)
-print(numSet1)
+#print(numSet)
+#print(numSet1)
