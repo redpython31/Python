@@ -449,3 +449,63 @@ print("Price" ,price)
 
 #print(numSet)
 #print(numSet1)
+
+#Loops in Python
+
+#syntax
+
+i = 1
+# while i <= 5:
+#     print("Faisal coder")
+#     i += 1
+
+#Question #11
+
+#print numbers from 1 to 100.
+
+# while i <= 100:
+#     print(i)
+#     i += 1
+
+#print number from 100 to 1
+
+# j = 100
+
+# while j >= 1:
+#     print(j)
+#     j -= 1
+
+#print the multiplication table of a number n
+
+# userInput = int(input("Enter number: "))
+
+# while i <= 10:
+#     print(userInput * i)
+#     i += 1
+
+#print the elements of the following  list using a loop
+
+# loopList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# loop_length = len(loopList)
+
+# loop_i = 0
+
+# while loop_i < loop_length:
+#     print(loopList[loop_i])
+#     loop_i += 1
+
+#Search for a number X in this tuple using loop
+
+loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+tuple_input = int(input("Enter number: "))
+
+idx = 0
+
+while idx < len(loop_tuple):
+    if(loop_tuple[idx] == tuple_input):
+        print(tuple_input,"is available at the index of",idx)
+    elif(idx+1 == len(loop_tuple)):
+        print("Not found!")
+    idx += 1
