@@ -454,7 +454,7 @@ print("Price" ,price)
 
 #syntax
 
-i = 1
+# i = 1
 # while i <= 5:
 #     print("Faisal coder")
 #     i += 1
@@ -497,15 +497,15 @@ i = 1
 
 #Search for a number X in this tuple using loop
 
-loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+# loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
-tuple_input = int(input("Enter number: "))
+# tuple_input = int(input("Enter number: "))
 
-idx = 0
+# idx = 0
 
-while idx < len(loop_tuple):
-    if(loop_tuple[idx] == tuple_input):
-        print(tuple_input,"is available at the index of",idx)
-    elif(idx+1 == len(loop_tuple)):
-        print("Not found!")
-    idx += 1
+# while idx < len(loop_tuple):
+#     if(loop_tuple[idx] == tuple_input):
+#         print(tuple_input,"is available at the index of",idx)
+#     elif(idx+1 == len(loop_tuple)):
+#         print("Not found!")
+#     idx += 1
