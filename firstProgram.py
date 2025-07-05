@@ -513,10 +513,70 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 #Loops in Python
 
-for num in loop_tuple:
-    print(num)
+#Question #12
 
-loop_Char = "Faisal coder"
+#Print the elements if the loopList list using a loop
 
-for charc in loop_Char:
-    print(charc)
+# for num in loopList:
+#     print(num)
+
+# loop_Char = "Faisal coder"
+
+# for charc in loop_Char:
+#     print(charc)
+# else:
+#     print("End of line.")
+
+#search for a number x in the loop_tuple using loop
+
+# forInput = int(input("Enter a number: "))
+
+# for_idx = 0
+
+# for el in loop_tuple:
+#     if (el == forInput):
+#         print(forInput,"is found at the index of",for_idx)
+#         break   #if don't want to check forward
+#     for_idx += 1
+    
+#Range(start,stop,step)=> range(1,5,1)
+#stop field is compulsory
+
+# for rng in range(5):
+#     print(rng)
+# print("\n")
+
+# for rng in range(1,5):
+#     print(rng)
+# print("\n")
+
+# for rng in range(1,10,2): #here is in range(start,stop,step)
+#     print(rng)
+
+#Question #13
+
+#print numbers from 1 to 100.
+# for rng_test in range(1,101,1):
+#     print(rng_test)
+# print("\n")
+
+# #print numbers from 100 to 1
+
+# for rng_test in range(100,0,-1):
+#     print(rng_test)
+# print("\n")
+
+#print the multiplication table of a number n.
+
+# rng_input = int(input("Enter a number: "))
+
+# for rng_test in range(1,11):
+#     print(rng_test * rng_input)
+
+#Pass statement
+
+for el in range(10):
+     pass
+    #empty loop we can not leave.but there is a way we can leave a loop empty with (pass)
+if(el > 4):
+    pass
