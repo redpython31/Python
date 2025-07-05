@@ -575,8 +575,8 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 #Pass statement
 
-for el in range(10):
-     pass
+# for el in range(10):
+#      pass
     #empty loop we can not leave.but there is a way we can leave a loop empty with (pass)
-if(el > 4):
-    pass
+# if(el > 4):
+#     pass
