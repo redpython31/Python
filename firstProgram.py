@@ -485,7 +485,7 @@ print("Price" ,price)
 
 #print the elements of the following  list using a loop
 
-# loopList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+loopList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 # loop_length = len(loopList)
 
@@ -497,7 +497,7 @@ print("Price" ,price)
 
 #Search for a number X in this tuple using loop
 
-# loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 # tuple_input = int(input("Enter number: "))
 
@@ -506,6 +506,17 @@ print("Price" ,price)
 # while idx < len(loop_tuple):
 #     if(loop_tuple[idx] == tuple_input):
 #         print(tuple_input,"is available at the index of",idx)
+#         break
 #     elif(idx+1 == len(loop_tuple)):
 #         print("Not found!")
 #     idx += 1
+
+#Loops in Python
+
+for num in loop_tuple:
+    print(num)
+
+loop_Char = "Faisal coder"
+
+for charc in loop_Char:
+    print(charc)
