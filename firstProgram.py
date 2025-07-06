@@ -605,25 +605,25 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
  #Functions in Pyhton
 
-def cal(a=1, b):
-    calculate = a + b
-    return calculate
+# def cal(a, b):
+#     calculate = a + b
+#     return calculate
 
-reslt= cal()
-print(reslt)
+# reslt= cal(5,10)
+# print(reslt)
 
-def prt():
-    print("hello")
+# def prt():
+#     print("hello")
 
-prt()
+# prt()
 
 #average of 3 numbers.
 
 
-def avg_sum(a,b,c):
-    sum = a + b + c
-    avg_resutl = sum / 3
-    return avg_resutl
+# def avg_sum(a,b,c):
+#     sum = a + b + c
+#     avg_resutl = sum / 3
+#     return avg_resutl
 
-call_avg = avg_sum(5,7,9)
-print(call_avg)
+# call_avg = avg_sum(5,7,9)
+# print(call_avg)
