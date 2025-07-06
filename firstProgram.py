@@ -580,3 +580,50 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
     #empty loop we can not leave.but there is a way we can leave a loop empty with (pass)
 # if(el > 4):
 #     pass
+
+#Question #14
+
+#Write a program to find the sum of first n numbers. (using while loop)
+
+# ques1 = int(input("Enter a number: "))
+
+# result = 0
+
+# i = 0
+# while (i <= ques1):
+#     result += i
+#     i += 1
+# print(result)
+
+#Write a program to find the factorial of first n numbers. (using for loop)
+
+# result1 = 1
+
+# for fact in range(1,ques1+1):
+#     result1 *= fact
+# print(result1)
+
+ #Functions in Pyhton
+
+def cal(a=1, b):
+    calculate = a + b
+    return calculate
+
+reslt= cal()
+print(reslt)
+
+def prt():
+    print("hello")
+
+prt()
+
+#average of 3 numbers.
+
+
+def avg_sum(a,b,c):
+    sum = a + b + c
+    avg_resutl = sum / 3
+    return avg_resutl
+
+call_avg = avg_sum(5,7,9)
+print(call_avg)
