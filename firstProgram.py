@@ -627,3 +627,26 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 # call_avg = avg_sum(5,7,9)
 # print(call_avg)
+
+#Question #15
+
+#Write a program to print length of alist. (list is the parameter)
+
+
+# def len_cities(city):
+#     cityRslt = len(city)
+#     return cityRslt
+
+
+cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
+
+# city_len = len_cities(cities)
+# print(city_len)
+
+#write a program to print the elements of a list in a single line.(list is the parameter)
+
+def single_line(input):
+    for item in input:
+        print(item, end= " ")
+
+single_line(cities)
