@@ -632,21 +632,98 @@ loop_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 #Write a program to print length of alist. (list is the parameter)
 
+cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 # def len_cities(city):
 #     cityRslt = len(city)
 #     return cityRslt
 
 
-cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 # city_len = len_cities(cities)
 # print(city_len)
 
 #write a program to print the elements of a list in a single line.(list is the parameter)
 
-def single_line(input):
-    for item in input:
-        print(item, end= " ")
+# def single_line(input):
+#     for item in input:
+#         print(item, end= " ")
 
-single_line(cities)
+# single_line(cities)
+
+#Write a function to find the factorial of n.(n is the parameter)
+
+# fun_fact = int(input("Enter a number: "))
+
+# def factorial(num):
+#     result = 1
+#     for factor in range(1,fun_fact + 1):
+#         result *= factor
+#     print(result)
+
+# factorial(fun_fact)
+
+
+#write a function to convert USD to INR
+
+# cal_curr = int(input("Enter a number: "))
+
+# def converter (curr):
+#     inrVal = curr * 83
+#     print(inrVal)
+
+# converter(cal_curr)
+
+#Write a function to take a input number if number is odd then output is "ODD" or if even than output is "EVEN"
+
+# checkNum = int(input("Enter a number: "))
+
+# def funCheck(x):
+#     if(x == 0):
+#         print("Zero")
+#     elif (x % 2 == 0):
+#         print("EVEN")
+
+#     else:
+#         print("ODD")
+
+# funCheck(checkNum)
+
+# RECURSION
+
+# def prt(y):
+
+#     if(y == 0):
+#         return
+#     print(y,"hello faisal.")
+#     prt(y-1)
+#     print("end")
+
+# prt(5) 
+
+#Write a recursuve function to calculate the sum of first n natural numbers.
+
+# n_natural = int(input("Enter number: "))
+
+# def n_func(z):
+#     if(z == 0):
+#         return 0
+#     return n_func(z -1 ) + z
+    
+
+
+# n_output = (n_func(n_natural))
+# print(n_output)
+
+#Write a recursive function to print all elements in a list . Hint: use list & index as paramenter
+
+# rec_list = [55, 14, 25, 89, 75, 35, 69, 12, 4, 9]
+
+# def rec_idx( w, u = 0):
+#     if(u == len(w)):
+#         return 
+#     print(w[u])
+#     rec_idx(w,u+1)
+
+
+# rec_idx(rec_list)
