@@ -727,3 +727,100 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 
 # rec_idx(rec_list)
+
+#File Input/Output
+
+# f = open("sample.txt", "w")
+
+# f.write("I have opened a file sample.txt and writing in it something. This is sample line in this text file")
+
+# f.close()
+
+# f = open("sample.txt" , "r")
+
+# data = f.read() #this is reading mode
+# print(data)
+# f.close()
+
+# f = open("sample.txt", "a")
+# f.write("\n now i am add some text in the existing file this is called appending")
+
+# f.close()
+
+#Here i can print one line or only some character of the file.
+
+# f = open("sample.txt", "r")
+# line1 = f.readline()
+
+# print(line1)
+
+# f.close()
+
+# f = open("sample.txt", "r")
+# characterWise = f.read(20)
+# print(characterWise)
+
+# f.close()
+
+#Combine Mode
+
+# f = open("combineMode.txt", "w+")
+
+
+# combWrite = f.write("This is a example of combine mode for w+ means we can override any existing file and also read in one shot.")
+
+# f.close
+
+# f = open("combineMode.txt", "r+")
+
+# readComb = f.write("This changed by using r+ mode.")
+
+# print(f.read(readComb))
+
+# f.close
+
+# f = open("combineMode.txt", "a+")
+
+# print(f.read())
+
+# f.write("this will be change or write from the last in file.")
+
+# f.close
+
+#With syntax 
+
+# with open("sample.txt" , "w") as f:
+#     f.write("This is sample line in this text file now i am add some text in the existing file this is called appending.\n This is example of [with syntax] here we don't need to f.close function and i am appending some lines in this file.This is example of [with syntax] here we don't need to f.close function and i am overriding some lines in this file.")
+
+# with open("sample.txt", "r") as f:
+#     print(f.read())
+
+#Deleting a file with os module
+
+# f = open("test.txt", "w")
+
+# f.write("this file makes purpose to check import os function that is using for deleting files.")
+
+# f.close
+
+# import os
+
+# os.remove("test.txt")
+
+#Question #16
+
+#create anew file "Practice.txt" using python. add the following datain it:
+
+# Hi everyone
+# we are learning File I/O
+# using Java.
+# I like programming in Java.
+
+# f = open("practice.txt", "w")
+# f.write("Hi everyone\nwe are learning File I/O\nusing Java.\nI like programming in Java.")
+
+# f.close
+
+#Write a function that replace all occurrences of "java" with "python" in above file.
+
+

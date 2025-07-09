@@ -1,0 +1,2 @@
+This is sample line in this text file now i am add some text in the existing file this is called appending.
+ This is example of [with syntax] here we don't need to f.close function and i am appending some lines in this file.This is example of [with syntax] here we don't need to f.close function and i am overriding some lines in this file.

@@ -1,0 +1,1 @@
+This changed by using r+ mode.ode for w+ means we can override any existing file and also read in one shot.this will be change or write from the last in file.this will be change or write from the last in file.
