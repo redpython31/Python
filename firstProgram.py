@@ -823,4 +823,63 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 #Write a function that replace all occurrences of "java" with "python" in above file.
 
+# f = open("practice.txt", "r")
 
+# data= f.read()
+
+# newData = data.replace("Java","Pyhton")
+# print(newData)
+
+# f = open("practice.txt", "w")
+
+# f.write(newData)
+
+# f.close()
+
+#Search if the word "learning" exists in the file or not.
+
+# word =  input("Enter any word: ")
+
+# with open("practice.txt", "r") as f:
+
+#     data = f.read()
+
+#     if(data.find(word) != -1 ):
+#         print("Found")
+#     else: 
+#         print("Not Found")
+
+#Write a function to find in which line of the file does the word "learning" occur first.
+#Print -1 if word not found.
+
+# def find_line(text):
+
+#     line_no = 1
+#     with open("practice.txt", "r") as f:
+#         line = f.readline()
+#         while line:
+#             if(text in line):
+#                 print(f"Found at line {line_no}")
+#                 return 
+#             line_no += 1
+#             line = f.readline()
+#         print("Word not found!")
+
+# findInput = input("Enter word: ")
+
+# find_line(findInput)
+
+#From a file containing numbers separated by comma, print the count of even numbers.
+
+# with open("commaSep.txt", "w") as f:
+#     data = f.write("1,2,3,5,22,45,36,88,25,64,91,99")
+
+# count = 0
+# with open("commaSep.txt","r")as f:
+#     data = f.read()
+
+#     nums = data.split(",")
+#     for val in nums:
+#         if(int(val) % 2 == 0):
+#             count += 1
+# print(count)
