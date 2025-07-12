@@ -883,3 +883,104 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 #         if(int(val) % 2 == 0):
 #             count += 1
 # print(count)
+
+#Object Oriented Programming (OPPs)
+
+# class Student:
+
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+#         print("adding new student in Database..")
+
+#     def welcome(self):
+#         print("welcome students.",self.name)
+
+# s1 = Student("Faisal",99)
+# s1.welcome()
+# print(s1.name,s1.marks)
+# s2 = Student("Kasif", 98)
+# s2.welcome()
+# print(s2.name,s2.marks)
+
+#Question #17
+
+#Create student class that takes name & marks of 3 subjects as arguments in constructor.
+#then create amethod to print the average.
+
+class Datas:
+
+    def __init__(self,name ,marks):
+        self.name = name
+        self.marks = marks
+       
+
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum += val
+        print(f"Hi{self.name}you avg score is: {sum/3:.2f}")
+
+s1 = Datas("Faisal",[98, 96, 93])
+
+s1.get_avg()
+
+
+# THIS CODE IS FOR CSS BATTLE !!!
+
+# <div class="top">
+#   <div class="top-inner"></div>
+#   <div class="top-inner"></div>
+# </div>
+#   <div class="left"></div>
+#   <div class="right">
+#     <div class="right-inner"></div>
+#   <div class="right-inner"></div>
+#     <div class="right-inner"></div>
+#   </div>
+# <div class="bottom">
+#   <div class="bottom-inner"></div>
+#   <div class="bottom-inner"></div>
+# </div>
+# <style>
+#   body{
+#     margin-top: 20px;
+#     padding: 0px;
+#     box-sizing: border-box;
+#     background: #FDFFE9;
+    
+#   }
+# .top{
+#   background: #ADB274;
+#   width:360px;
+#   height:30px;
+#   margin-inline: auto;
+#   display: flex;
+#   justify-content: space-between;
+#   align-items: center;
+# }
+
+# .top-inner{
+#   width:20px;
+#   height: 20px;
+#   margin: 5px;
+#   background:#555A2A;
+# }
+# .left{
+#   width:80px;
+#   height:180px;
+#   margin: 10px 10px 10px 12px;
+#   background: #ADB274; 
+#   display: inline-block;
+# }
+# .right-inner{
+#   background: #ADB274;
+#    width: 250px;
+#   height: 40px;
+# }
+# .right .right-inner:nth-child(1){
+#   width: 250px;
+#   height: 40px;
+# }
+  
+# </style>
