@@ -884,7 +884,7 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 #             count += 1
 # print(count)
 
-#Object Oriented Programming (OPPs)
+#Object Oriented Programming (OOPs)
 
 # class Student:
 
@@ -899,6 +899,7 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 # s1 = Student("Faisal",99)
 # s1.welcome()
 # print(s1.name,s1.marks)
+
 # s2 = Student("Kasif", 98)
 # s2.welcome()
 # print(s2.name,s2.marks)
@@ -906,81 +907,63 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 #Question #17
 
 #Create student class that takes name & marks of 3 subjects as arguments in constructor.
-#then create amethod to print the average.
+#then create a method to print the average.
 
-class Datas:
+# class Datas:
 
-    def __init__(self,name ,marks):
-        self.name = name
-        self.marks = marks
+#     def __init__(self,name ,marks):
+#         self.name = name
+#         self.marks = marks
        
 
-    def get_avg(self):
-        sum = 0
-        for val in self.marks:
-            sum += val
-        print(f"Hi{self.name}you avg score is: {sum/3:.2f}")
+#     def get_avg(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#         print(f"Hi{self.name}you avg score is: {sum/3:.2f}")
 
-s1 = Datas("Faisal",[98, 96, 93])
+# s1 = Datas("Faisal",[98, 96, 93])
 
-s1.get_avg()
+# s1.get_avg()
 
+#Static Methods
 
-# THIS CODE IS FOR CSS BATTLE !!!
+# class CheckMethod :
 
-# <div class="top">
-#   <div class="top-inner"></div>
-#   <div class="top-inner"></div>
-# </div>
-#   <div class="left"></div>
-#   <div class="right">
-#     <div class="right-inner"></div>
-#   <div class="right-inner"></div>
-#     <div class="right-inner"></div>
-#   </div>
-# <div class="bottom">
-#   <div class="bottom-inner"></div>
-#   <div class="bottom-inner"></div>
-# </div>
-# <style>
-#   body{
-#     margin-top: 20px;
-#     padding: 0px;
-#     box-sizing: border-box;
-#     background: #FDFFE9;
-    
-#   }
-# .top{
-#   background: #ADB274;
-#   width:360px;
-#   height:30px;
-#   margin-inline: auto;
-#   display: flex;
-#   justify-content: space-between;
-#   align-items: center;
-# }
+#     @staticmethod  #Decorator
+#     def greet():
+#         print("Hello Faisal coder.")
 
-# .top-inner{
-#   width:20px;
-#   height: 20px;
-#   margin: 5px;
-#   background:#555A2A;
-# }
-# .left{
-#   width:80px;
-#   height:180px;
-#   margin: 10px 10px 10px 12px;
-#   background: #ADB274; 
-#   display: inline-block;
-# }
-# .right-inner{
-#   background: #ADB274;
-#    width: 250px;
-#   height: 40px;
-# }
-# .right .right-inner:nth-child(1){
-#   width: 250px;
-#   height: 40px;
-# }
-  
-# </style>
+# c1 = CheckMethod()
+
+# c1.greet()
+
+#Question #18
+
+#Create Account class with 2 attributes- balance & account no.
+#Create methods for debit, credit & printing the balance.
+
+# class Account:
+
+#     def __init__(self, accountNo, balance):
+#         self.accountNo = accountNo
+#         self.balance = balance
+        
+        
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print(f"Your account is debited by: {amount}")
+#         print(f"Your balance is: {self.balance}")
+
+#     def credit(self, amount):
+#         self.balance += amount
+#         print(f"Your account is credited by: {amount}")
+#         print(f"Your balance is: {self.balance}")
+
+# accountNum = int(input("Enter account Number: "))        
+# deposite = int(input("Enter amount: "))
+
+# acc1 = Account(accountNum, deposite)
+
+# acc1.debit(2000)
+# acc1.credit(3000)
