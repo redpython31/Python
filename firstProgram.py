@@ -967,3 +967,107 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 # acc1.debit(2000)
 # acc1.credit(3000)
+
+#OBJECT ORIENTED PROGRAMMING (OOPs) part 2
+
+#used to delete object properties or object itself.
+
+# class faisal:
+
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+# f1 = faisal("faisal",29)
+
+# print(f1)
+# print(f1.name,f1.age)
+
+#delete properties or attributes
+
+# del f1.name
+# print(f1.name)
+
+# print(f1)
+# del f1
+# print(f1)
+
+#we can also private class attributes and methods (function)
+
+# class Person:
+#     __name = "faisal"   #this is class attribute
+
+#     def __hello(self):
+#         print("hello faisal")
+
+#     def welcome(self):
+#         self.__hello()
+
+# p1 = Person()
+
+# print(p1.welcome()) #This is calling internally class
+# print(p1.__name())
+# print(p1.__hello())
+
+#INHERITENCE
+
+# class Car:
+
+#     color = "Black"
+
+#     @staticmethod
+#     def start():
+#         print("Car Started..")
+
+#     @staticmethod
+#     def stop():
+#         print("Car Stopped..")
+
+# class ToyotaCar(Car):
+
+#     def __init__(self,name, brand):
+#         self.name = name
+#         self.brand = brand
+
+# car1 = Car()
+# print(car1) #Normally calling to Car class.
+
+# car2 = ToyotaCar("fotuner","Toyota")
+# print(car2)
+# print(car2.name)
+
+# print(car2.start(),car2.name,car2.stop())
+
+# print(car1.color)
+
+
+# class Fortuner(ToyotaCar):
+#     def __init__(self, name , brand, type):
+#         super().__init__(name, brand)
+#         self.type = type
+
+#we can access all the properties from class Car to Fortuner.
+
+# car3 = Fortuner("SUV","fotuner","Toyota")
+
+# print(car3)
+# print(car3.color)
+# car3.start()
+
+# print(car3.brand, car3.name, car3.type)
+
+# car3.stop()
+
+#Multiple inheritance
+
+# class A:
+#     varA = "Faisal"
+# class B:
+#     varB = "Coder"
+# class C(A, B):
+#     varC = "Pro"
+
+# c1 = C()
+# print(c1.varA)
+# print(c1.varB)
+# print(c1.varC)
