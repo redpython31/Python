@@ -1223,22 +1223,22 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 
 #Create a class called order which stores item & its price.
 
-class Order:
-    def __init__(self, item , price):
-        self.item = item
-        self.price = price
+# class Order:
+#     def __init__(self, item , price):
+#         self.item = item
+#         self.price = price
 
-    def __gt__(self, odr2):
-        return self.price > odr2.price
+#     def __gt__(self, odr2):
+#         return self.price > odr2.price
     
 
-odr1 = Order("chips", 50)
-odr2 = Order("Glue", 10)
+# odr1 = Order("chips", 50)
+# odr2 = Order("Glue", 10)
 
-print(odr1.item, odr1.price)
-print(odr2.item, odr2.price)
+# print(odr1.item, odr1.price)
+# print(odr2.item, odr2.price)
 
-print(odr1 > odr2)
+# print(odr1 > odr2)
 
 #Use Dunde function__gt__() to convey that:
 #   order1 > order2 if price of order1 > price of order2
