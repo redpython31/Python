@@ -1071,3 +1071,175 @@ cities = ["delhi", "gurgaon", "noida", "pune", "Mumbai"]
 # print(c1.varA)
 # print(c1.varB)
 # print(c1.varC)
+
+#Class Method
+
+# class People:
+
+#     name = "anonymous"   #we have to change this name
+
+
+    # def chgName(self, name):    #we can one of them
+        #self.name = name    #except this
+        # People.name = name  #this trick
+        # self.__class__.name = "faisal"  #this trick
+
+    # @classmethod    #this is second trick
+    # def chngName(cls, name):
+    #     cls.name = name
+
+# p1 = People()
+
+# p1.chgName("kazi") # \
+# print(p1.name)     #  \     we did from this trick but fail
+#                    #  /
+# print(People.name) # /
+
+#=================================
+
+#Now we can see the change in name with classmethod
+# p2 = People()
+
+# p2.chngName("arhan")
+# print(p2.name)
+# print(People.name)
+
+#@Property
+
+# class Subject:
+
+#     def __init__(self, phy, chem, math):
+#         self.phy = phy
+#         self.chem = chem
+#         self.math = math
+       # self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+        
+    #Then we create new method
+#     @property
+#     def percentage(self):
+#         return f"{(self.phy + self.chem + self.math) / 3:.2f}%"
+
+# std1 = Subject(88, 98, 99)
+
+# print(std1.percentage)
+
+#suppose a student have wrong marks in phy so.
+
+# std1.phy = 95
+# print(std1.phy)
+# print(std1.percentage) #But actual percentage not changed
+
+# print(std1.percentage) #now the percetage is changed
+
+# POLYMOPHISM : OPERATOR OVERLODING
+
+# print(1 + 2)
+# print("Mohd" + "Faisal")
+# print([1,2,3] + [4 ,5 ,6])
+
+# class Complex:
+#     def __init__(self,real, img):
+#         self.real =real
+#         self.img = img
+
+#     def showNum(self):
+#         print(self.real,"i +", self.img,"j")
+
+#     def __add__(self, num2):
+#         newReal = self.real + num2.real
+#         newImg = self.img + num2.img
+#         return Complex(newReal , newImg)
+
+#     def __sub__(self, num2):
+#         newReal = self.real - num2.real
+#         newImg = self.img - num2.img
+#         return Complex(newReal , newImg)
+
+# com1 = Complex(1, 3)
+# com1.showNum()
+
+# num2 = Complex(4, 7)
+# num2.showNum()
+
+# num3 = com1 + num2
+# num3.showNum()
+
+# num3 = com1 - num2
+# num3.showNum()
+
+#Question #19
+
+#Define a circle class to create a circle with radius r using the constuctor.
+
+
+
+# class Circle:
+
+#     def __init__(self, radius):
+#         self.radius = radius
+    
+#Define an Area() method of the class which calculates the aea of the circle.
+
+#     def area(self):
+#         return (22/7) * self.radius ** 2
+    
+#Define a perimete() method of the class which allows you to calculate the perimeter of the circle.
+
+#     def perimeter(self):
+#         return 2 * (22/7) *self.radius
+
+# cir1 = Circle(21)
+
+# print(cir1.area())
+# print(cir1.perimeter())
+
+#Define a Employee class with attributes role, department & salary. This class also has a showDetail() method.
+
+# class Employee:
+
+#     def __init__(self, role, department, salary):
+#         self.role = role
+#         self.department = department
+#         self.salary = salary
+
+#     def showDetail(self):
+#         print(self.role, self.department, self.salary)
+    
+# #Create an engineer class that inherits properties from Employee & has additional attributes : name & age.
+
+# class Engineer(Employee):
+
+#     def __init__(self, name , age):
+#         self.name = name 
+#         self.age = age
+#         super().__init__("Engineer","IT","85,000")
+
+
+# emp1 = Employee("Executive","Data-Analytic",95000)        
+# emp1.showDetail()
+
+# emp2 = Engineer("Faisal",29)
+# emp2.showDetail()
+
+#Create a class called order which stores item & its price.
+
+class Order:
+    def __init__(self, item , price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, odr2):
+        return self.price > odr2.price
+    
+
+odr1 = Order("chips", 50)
+odr2 = Order("Glue", 10)
+
+print(odr1.item, odr1.price)
+print(odr2.item, odr2.price)
+
+print(odr1 > odr2)
+
+#Use Dunde function__gt__() to convey that:
+#   order1 > order2 if price of order1 > price of order2
+
